@@ -82,7 +82,7 @@ input[type="radio"] {
 
 button {
     background: linear-gradient(to bottom, #26df11, #30A60F);
-    color: white;
+    color: #2D332C;
     padding: 12px 24px;
     border: none;
     border-radius: 25px;
@@ -111,6 +111,7 @@ button:hover {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 20px 0px 20px 0px;
 }
 
 .resultado-container h2 {
@@ -160,7 +161,6 @@ form::before, #resultado::before, .container::before {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0));
     border-radius: 15px 15px 0 0;
     pointer-events: none;
 }
@@ -172,7 +172,7 @@ form::before, #resultado::before, .container::before {
 
 .start-btn, .refazer-btn {
     background: linear-gradient(to bottom,#26df11, #30A60F);
-    color: white;
+    color: 2D332C;
     padding: 15px 30px;
     border: none;
     border-radius: 25px;
