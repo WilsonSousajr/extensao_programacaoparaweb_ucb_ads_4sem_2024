@@ -7,25 +7,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function exibirResultado(pessoas) {
     const descricoes = {
-        'Luísa Barros': 'Você é prático e eficiente, resolvendo problemas rapidamente.',
-        'Danilo Alves Ribeiro': 'Você é altamente funcional e foca em facilitar a vida dos outros.',
-        'Lucca': 'Você busca harmonia e conexão com o ambiente.',
-        'Kenji': 'Você é flexível e sempre explora novas possibilidades.',
-        'Lázaro': 'Você gosta de controlar o fluxo das situações e se adapta bem.',
-        'Sill': 'Você é confiável e valoriza a precisão.',
-        'João Luz': 'Você é tradicional e gosta de soluções diretas.',
-        'Henrique': 'Você é intuitivo e se adapta sem perder a originalidade.'
+        'Luísa Barros': 'Bem-vind@, calour@ apadrinhad@!',
+        'Danilo Alves Ribeiro': 'Bem-vind@, calour@ apadrinhad@',
+        'Lucca': 'Bem-vind@, calour@ apadrinhad@',
+        'Kenji': 'Bem-vind@, calour@ apadrinhad@',
+        'Lázaro': 'Bem-vind@, calour@ apadrinhad@',
+        'Sill': 'Bem-vind@, calour@ apadrinhad@',
+        'João Luz': 'Bem-vind@, calour@ apadrinhad@',
+        'Henrique': 'Bem-vind@, calour@ apadrinhad@'
     };
 
     const imagens = {
-        'Luísa Barros': '/torneira/images/automatica.png',
-        'Danilo Alves Ribeiro': '/torneira/images/ducharetratil.png',
-        'Lucca': '/torneira/images/cascata.png',
-        'Kenji': '/torneira/images/articulada.jpg',
-        'Lázaro': '/torneira/images/controlevazao.jpg',
-        'Sill': '/torneira/images/dupla.png',
-        'João Luz': '/torneira/images/roscamanual.png',
-        'Henrique': '/torneira/images/misturadormonocomando.png'
+        'Luísa Barros': '',
+        'Danilo Alves Ribeiro': '',
+        'Lucca': '',
+        'Kenji': '',
+        'Lázaro': '',
+        'Sill': '',
+        'João Luz': '',
+        'Henrique': ''
     };
 
     const resultadoDiv = document.getElementById('resultado');
