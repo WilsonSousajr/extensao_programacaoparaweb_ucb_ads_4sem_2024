@@ -15,12 +15,13 @@ function analisarRespostas(respostas) {
     const correspondencia = {
         'a': 'Luísa Barros',
         'b': 'Danilo Alves Ribeiro',
+        'd': 'Natália',
         'c': 'Lucca',
-        'd': 'Kenji',
-        'e': 'Lázaro',
-        'f': 'Sill',
-        'g': 'João Luz',
-        'h': 'Henrique'
+        'e': 'Kenji',
+        'f': 'Lázaro',
+        'g': 'Sill',
+        'h': 'João Luz',
+        'i': 'Henrique'
     };
 
     let escolhidos = new Set();

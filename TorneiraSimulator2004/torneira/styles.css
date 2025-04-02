@@ -59,7 +59,7 @@ form, #resultado {
 
 .question {
     margin-bottom: 20px;
-    background: rgba(0, 120, 215, 0.7);
+    background:  linear-gradient(to bottom, #2ED914, #30A60F);
     padding: 15px;
     border-radius: 10px;
 }
@@ -75,7 +75,7 @@ input[type="radio"] {
 }
 
 button {
-    background: linear-gradient(to bottom, #00a8ff, #0097e6);
+    background: linear-gradient(to bottom, #26df11, #30A60F);
     color: white;
     padding: 12px 24px;
     border: none;
@@ -88,7 +88,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(to bottom, #0097e6, #00a8ff);
+    background: linear-gradient(to bottom, #26df11, #30A60F);
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transform: translateY(-2px);
 }
@@ -165,7 +165,7 @@ form::before, #resultado::before, .container::before {
 }
 
 .start-btn, .refazer-btn {
-    background: linear-gradient(to bottom, #00a8ff, #0097e6);
+    background: linear-gradient(to bottom,#26df11, #30A60F);
     color: white;
     padding: 15px 30px;
     border: none;
@@ -179,7 +179,7 @@ form::before, #resultado::before, .container::before {
 }
 
 .start-btn:hover, .refazer-btn:hover {
-    background: linear-gradient(to bottom, #0097e6, #00a8ff);
+    background: linear-gradient(to bottom, #26df11, #30A60F);
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transform: translateY(-2px);
 }

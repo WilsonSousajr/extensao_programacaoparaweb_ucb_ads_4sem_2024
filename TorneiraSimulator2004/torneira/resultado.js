@@ -10,6 +10,7 @@ function exibirResultado(pessoas) {
         'Luísa Barros': 'Bem-vind@, calour@ apadrinhad@!',
         'Danilo Alves Ribeiro': 'Bem-vind@, calour@ apadrinhad@',
         'Lucca': 'Bem-vind@, calour@ apadrinhad@',
+        'Natália': 'Bem-vind@, calour@ apadrinhad@',
         'Kenji': 'Bem-vind@, calour@ apadrinhad@',
         'Lázaro': 'Bem-vind@, calour@ apadrinhad@',
         'Sill': 'Bem-vind@, calour@ apadrinhad@',
@@ -18,14 +19,15 @@ function exibirResultado(pessoas) {
     };
 
     const imagens = {
-        'Luísa Barros': '',
-        'Danilo Alves Ribeiro': '',
-        'Lucca': '',
-        'Kenji': '',
-        'Lázaro': '',
-        'Sill': '',
-        'João Luz': '',
-        'Henrique': ''
+        'Luísa Barros': './images/1.jpeg',
+        'Danilo Alves Ribeiro': './images/2.jpg',
+        'Lucca': './images/3.JPG',
+        'Natália':'./images/4.jpg',
+        'Kenji': './images/5.jpg',
+        'Lázaro': './images/6.jpg',
+        'Sill': './images/7.jpeg',
+        'João Luz': './images/8.jpg',
+        'Henrique': './images/9.jpeg'
     };
 
     const resultadoDiv = document.getElementById('resultado');
