@@ -2,8 +2,8 @@ document.getElementById('questionario').addEventListener('submit', function(e) {
     e.preventDefault();
     
     const respostas = {};
-    for (let i = 1; i <= 10; i++) {
-        respostas[`q${i}`] = document.querySelector(`input[name="q${i}"]:checked`).value;
+    for (let i = 1; i <= 3; i++) {
+        respostas[`q${i}`] = document.querySelector(`input[name="q${i}"]:checked`)?.value || null;
     }
 
     const resultado = analisarRespostas(respostas);
@@ -12,52 +12,23 @@ document.getElementById('questionario').addEventListener('submit', function(e) {
 });
 
 function analisarRespostas(respostas) {
-    const pontuacao = {
-        'Torneira de Sensor Automático': 0,
-        'Torneira de Cozinha Gourmet com Ducha Retrátil': 0,
-        'Torneira Cascata': 0,
-        'Torneira Articulada': 0,
-        'Torneira com Controle de Vazão': 0,
-        'Torneira de Duas Alavancas': 0,
-        'Torneira de Rosca Manual': 0,
-        'Torneira de Misturador Monocomando': 0
+    const correspondencia = {
+        'a': 'Luísa Barros',
+        'b': 'Danilo Alves Ribeiro',
+        'c': 'Lucca',
+        'd': 'Kenji',
+        'e': 'Lázaro',
+        'f': 'Sill',
+        'g': 'João Luz',
+        'h': 'Henrique'
     };
 
+    let escolhidos = new Set();
     for (let pergunta in respostas) {
-        switch (pergunta) {
-            case 'q1':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira de Sensor Automático']++;
-                break;
-            case 'q2':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira de Cozinha Gourmet com Ducha Retrátil']++;
-                break;
-            case 'q3':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira Cascata']++;
-                break;
-            case 'q4':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira Articulada']++;
-                break;
-            case 'q5':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira com Controle de Vazão']++;
-                break;
-            case 'q6':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira de Duas Alavancas']++;
-                break;
-            case 'q7':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira de Rosca Manual']++;
-                break;
-            case 'q8':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira de Misturador Monocomando']++;
-                break;
-            case 'q9':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira de Sensor Automático']++;
-                break;
-            case 'q10':
-                if (respostas[pergunta] === 'a') pontuacao['Torneira de Cozinha Gourmet com Ducha Retrátil']++;
-                break;
+        if (respostas[pergunta] && correspondencia[respostas[pergunta]]) {
+            escolhidos.add(correspondencia[respostas[pergunta]]);
         }
     }
 
-    let torneiraEscolhida = Object.keys(pontuacao).reduce((a, b) => pontuacao[a] > pontuacao[b] ? a : b);
-    return { torneira: torneiraEscolhida, pontuacao: pontuacao };
+    return { pessoas: Array.from(escolhidos) };
 }
