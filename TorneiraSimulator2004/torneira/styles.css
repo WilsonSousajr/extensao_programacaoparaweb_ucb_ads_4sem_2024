@@ -2,7 +2,7 @@ body {
     font-family: 'Helvetica', Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-image: url('/torneira/images/background.JPEG');
+    background-image: url('./images/background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-    color: #ffffff;
+    color: #ededed;
     text-align: center;
     font-weight: bold;
     font-size: 48px;
@@ -62,12 +62,18 @@ form, #resultado {
     background:  linear-gradient(to bottom, #2ED914, #30A60F);
     padding: 15px;
     border-radius: 10px;
+    color: #2D332C !important; 
+}
+
+.question p{
+    color: #2D332C;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: 500;
+    color: #2D332C;
 }
 
 input[type="radio"] {
